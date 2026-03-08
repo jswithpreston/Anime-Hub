@@ -1,16 +1,33 @@
-# React + Vite
+# 🎬 Anime Discovery Engine
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern anime discovery platform built with React and Tailwind CSS that features real-time search, trending analytics via Appwrite, and live data from the Jikan API.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Key Features
 
-## React Compiler
+✦ **Real-Time Search:** Enjoy a seamless, lag-free typing experience powered by an 800ms debounce implementation.  
+✦ **Trending Analytics:** Automatically tracks user search interest and dynamically ranks top queries using an Appwrite database.  
+✦ **Live Anime Data:** Fetches accurate titles, scores, and poster artwork directly from the Jikan API.  
+✦ **Sleek UI:** Features a dark-themed, responsive grid layout built with Tailwind CSS, complete with professional 2:3 aspect ratio anime cards.  
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+➤ **Frontend:** React (Vite)  
+➤ **Styling:** Tailwind CSS  
+➤ **Database/BaaS:** Appwrite  
+➤ **API:** Jikan (Unofficial MyAnimeList API)  
+➤ **Utilities:** `react-use` for custom hooks  
+
+---
+
+## 🔐 Environment Variables
+
+To run this project locally, create a `.env` file in the root directory and add your Appwrite credentials:
+
+```env
+VITE_APPWRITE_PROJECT_ID=your_project_id
+VITE_APPWRITE_DATABASE_ID=your_database_id
+VITE_APPWRITE_COLLECTION_ID=your_collection_id
